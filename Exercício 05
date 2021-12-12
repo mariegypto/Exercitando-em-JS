@@ -7,28 +7,28 @@ Faça um programa que simule uma urna eletrônica. Para cada eleitor, deve ser l
 A eleição é encerrada quando um valor negativo (menor do que 0) para o título do eleitor é digitado. Informe quantos votos cada candidato teve e qual deles ganhou a eleição!*/
 
 var titulo, totalJose, totalJoao;
-totalJose = 0;
-totalJoao = 0;
+totaljose = 0;
+totaljoao = 0;
 
 do {
-    alert("Digite o seu titulo de eleitor:");
+    alert("Digite o  titulo de eleitor:");
     titulo = Number(prompt());
     if (titulo >= 0) {
     alert("Candidatos:\n1 - José, Partido da Felicidade.\n2 - João, Partido da Esperança.");
     var voto = Number(prompt());
     switch (voto) {
-        case 1: totalJose++; break;
-        case 2: totalJoao++; break;
+        case 1: totaljose++; break;
+        case 2: totaljoao++; break;
         default: alert("Voto nulo.");
     }
-        alert("Parabéns, cidadão!");
+        alert("Agradecemos seu voto.");
  }while (titulo >= 0)
     alert("Resultado:\nJosé teve " + totalJose + " votos.\nJoão teve " + totalJoao + " votos.");
-    if (totalJose > totalJoao) {
+    if (totaljose > totaljoao) {
         alert("José foi eleito.");
     }else
-        if (totalJoao == totalJose) {
-          alert("A eleição empatou, tirem no dado.");
+        if (totaljoao == totaljose) {
+          alert("A eleição empatou. Haverá um segundo turno.");
         } else {
             alert("João foi eleito.");
         }
