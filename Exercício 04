@@ -1,0 +1,36 @@
+/*Escreva um programa que leia dois números e apresente um menu de opções como o mostrado abaixo: Escolha a opção:
+A- Soma de 2 números. 
+B- Diferença entre 2 números (maior pelo menor). 
+C- Produto entre 2 números. 
+D- Divisão entre 2 números (o denominador não pode ser zero). 
+Leia a opção do usuário e execute a operação com os dois números lidos anteriormente. 
+Caso a opção digitada seja inválida, apresente a mensagem de “Opção inválida” para o usuário.*/
+
+var v1;
+v1 = parseInt(prompt("Insira um número"));
+
+var v2;
+v2 = parseInt(prompt("Insira um segundo número"));
+
+alert("Escolha a opção: \n A- Soma de 2 números. \n B- Diferença entre 2 números (maior pelo menor). \n C- Produto entre 2 números. \n D- Divisão entre 2 números (o denominador não pode ser zero).")
+var opcao = (prompt("Escolha uma das oções apresentadas anteriormente:"));
+var resultado
+
+if (opcao == "A") {
+    resultado = v1 + v2
+    document.write("O resultado da operação é: " + resultado)
+}else
+    if(opcao == "B") {
+       resultado = v1 + v2
+       document.write("O resultado da operação é: " + resultado)
+    }else
+        if (opcao == "C") {
+           resultado = v1 + v2
+           document.write("O resultado da operação é: " + resultado)
+        }else   
+           if(opcao == "D") {
+             resultado = v1 + v2
+             document.write("O resultado da operação é: " + resultado)
+           } else {
+            document.write("Opção inválida")
+        }
