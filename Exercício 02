@@ -1,0 +1,8 @@
+//Escreva um programa que calcule e mostre a tabuada (até 10x) de um número qualquer, digitado pelo usuário.
+
+var v1;
+v1 = parseInt(prompt("Insira um número"));
+var i = 0;
+for (var i = 0; i <= 10; i++) {
+   alert("Tabuada:" + v1 * i)
+}
