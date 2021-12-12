@@ -1,0 +1,11 @@
+//Faça um programa que leia um vetor numérico de 10 posições. Depois, ordene o vetor em ordem crescente e apresente os elementos ordenados.
+
+var numeros = new Array()
+for (var i = 0; i < 10; i++) {
+  numeros[i] = i + 1;
+}
+
+for (var i = 0; i < numeros.length; i++) {
+  document.write(i);
+  document.write("<br>")
+}
